@@ -1,0 +1,172 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "input",
+      "data": {
+        "label": "Brukerinput"
+      },
+      "position": {
+        "x": 100,
+        "y": 350
+      },
+      "deletable": false,
+      "className": "bg-slate-800 text-white border-2 border-dashed border-cyan-500 rounded-xl shadow-lg shadow-cyan-900/50 w-48 h-16 flex justify-center items-center font-semibold",
+      "width": 168,
+      "height": 56
+    },
+    {
+      "id": "2",
+      "type": "agent",
+      "data": {
+        "label": "Frontend-agent",
+        "agentId": "FrontendAgent",
+        "customPrompt": "You are an expert frontend developer. You create clean, efficient, and responsive code based on the user's request. Your output should be a single code block."
+      },
+      "position": {
+        "x": 400,
+        "y": 50
+      },
+      "width": 168,
+      "height": 47,
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "3",
+      "type": "output",
+      "data": {
+        "label": "Sluttresultat"
+      },
+      "position": {
+        "x": 700,
+        "y": 350
+      },
+      "deletable": false,
+      "className": "bg-slate-800 text-white border-2 border-dashed border-green-500 rounded-xl w-48 h-16 flex justify-center items-center font-semibold",
+      "width": 168,
+      "height": 56
+    },
+    {
+      "id": "4",
+      "type": "agent",
+      "data": {
+        "label": "Oppgave-agent",
+        "agentId": "TaskAgent"
+      },
+      "position": {
+        "x": 69.10000000000002,
+        "y": 5.76171875
+      },
+      "width": 168,
+      "height": 47,
+      "selected": true,
+      "positionAbsolute": {
+        "x": 69.10000000000002,
+        "y": 5.76171875
+      },
+      "dragging": false
+    },
+    {
+      "id": "5",
+      "type": "agent",
+      "data": {
+        "label": "Dataanalytiker",
+        "agentId": "DataScientistAgent"
+      },
+      "position": {
+        "x": 402.953125,
+        "y": 268.05657958984375
+      },
+      "width": 168,
+      "height": 47,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 402.953125,
+        "y": 268.05657958984375
+      },
+      "dragging": false
+    },
+    {
+      "id": "6",
+      "type": "agent",
+      "data": {
+        "label": "UX-designer",
+        "agentId": "UXDesignerAgent"
+      },
+      "position": {
+        "x": 400,
+        "y": 650
+      },
+      "width": 168,
+      "height": 47
+    },
+    {
+      "id": "7",
+      "type": "agent",
+      "data": {
+        "label": "Backend-agent",
+        "agentId": "BackendAgent"
+      },
+      "position": {
+        "x": 400,
+        "y": 350
+      },
+      "width": 168,
+      "height": 47
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1-2",
+      "source": "1",
+      "target": "2"
+    },
+    {
+      "id": "e2-3",
+      "source": "2",
+      "target": "3"
+    },
+    {
+      "id": "e1-4",
+      "source": "1",
+      "target": "4"
+    },
+    {
+      "id": "e4-3",
+      "source": "4",
+      "target": "3"
+    },
+    {
+      "id": "e1-5",
+      "source": "1",
+      "target": "5"
+    },
+    {
+      "id": "e5-3",
+      "source": "5",
+      "target": "3"
+    },
+    {
+      "id": "e1-6",
+      "source": "1",
+      "target": "6"
+    },
+    {
+      "id": "e6-3",
+      "source": "6",
+      "target": "3"
+    },
+    {
+      "id": "e1-7",
+      "source": "1",
+      "target": "7"
+    },
+    {
+      "id": "e7-3",
+      "source": "7",
+      "target": "3"
+    }
+  ],
+  "userInput": ""
+}
